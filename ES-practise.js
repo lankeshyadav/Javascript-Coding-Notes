@@ -49,16 +49,38 @@ iterable objects
 
 // arrow function
 
-let sum = (a, b) => a + b;
-var name = "Bittu"
-var obj = {
-    name: "Lankesh",
-    getName: function (){
-        return () => {
-            console.log(this);
-            return this.name;
-        }
-    }
-}
+// let sum = (a, b) => a + b;
+// var name = "Bittu"
+// var obj = {
+//     name: "Lankesh",
+//     getName: function (){
+//         return () => {
+//             console.log(this);
+//             return this.name;
+//         }
+//     }
+// }
 
-console.log(obj.getName()());
+// console.log(obj.getName()());
+
+// rest parameter
+
+// function rest(para1, para2, ...para3){
+//     console.log(para1);
+//     console.log(para2);
+//     console.log(para3);
+// }
+// rest(3, 5, 7, 9, 11);
+
+
+//spread operator
+// let arr1 = [1,2,3,4,5,6,3];
+// resizeTo(...arr1);
+
+
+//for -of and for-in
+//for-of loop
+const arr = [1,2,3,4,5];
+for(const element of arr){
+    console.log(element);
+}
