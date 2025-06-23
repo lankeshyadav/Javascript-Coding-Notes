@@ -80,7 +80,12 @@ iterable objects
 
 //for -of and for-in
 //for-of loop
-const arr = [1,2,3,4,5];
-for(const element of arr){
-    console.log(element);
-}
+// const arr = [1,2,3,4,5];
+// for(const element of arr){
+//     console.log(element);
+// }
+
+var a = 10;
+var b = 20;
+var result = a+b;
+console.log(result);
