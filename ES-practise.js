@@ -90,8 +90,9 @@ iterable objects
 // var result = a+b;
 // console.log(result);
 
-let sum = 100;
-for (let i = 0; i <= 100; i++) {
-  sum += i;
-} 
-console.log(sum);
+// let sum = 100;
+// for (let i = 0; i <= 100; i++) {
+//   sum += i;
+// } 
+// console.log(sum);
+

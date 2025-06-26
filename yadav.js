@@ -158,3 +158,7 @@ for(let i = 0; i <=fruits.length; i++) {
 //     }
 // }
 // fetchData(); // Output: "Caught error: Network Error"
+
+
+const str = "   hello world  ";
+console.log(str.trim());
