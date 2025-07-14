@@ -36,12 +36,49 @@
 //         }
 //     console.log(star); 
 // }
-for(let i = 1; i <= 5; i++){
-    let count = "";
+
+
+
+// for(let i = 1; i <= 5; i++){
+//     let count = "";
     
-    for(let j = 1; j <= i; j++){
-        count += j;
-    }
+//     for(let j = 1; j <= i; j++){
+//         count += j;
+//     }
     
-    console.log(count);
+//     console.log(count);
+// }
+
+
+// for(let i = 1; i <= 5; i++){
+//     let str = "";
+//     for(let j = 1; j <= 5-i; j++){
+//       str += " ";
+//     }
+//     let res = 1;
+//     for(let k = 1; k <= i; k++){
+//         str += `${res} `;
+//         res = res * (i-k);
+//         res = res/k;
+//     }
+//     console.log(str);
+// }
+
+
+
+let number = 10;
+function isPrime(num) {
+  let len = num/2; 
+  for (let i = 2; i <= len; i++) {
+    if (num % i == 0 || num <= 1) {
+      return false;
+    } 
+  }
+  return true; 
 }
+if (isPrime(number)) {
+  console.log(number + " is a Prime Number");
+} else {
+  console.log(number + " is Not a Prime Number");
+}
+
