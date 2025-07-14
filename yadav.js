@@ -160,5 +160,15 @@ for(let i = 0; i <=fruits.length; i++) {
 // fetchData(); // Output: "Caught error: Network Error"
 
 
-const str = "   hello world  ";
-console.log(str.trim());
+// const str = "   hello world  ";
+// console.log(str.trim());
+
+for(let i = 0; i <= 9; i++){
+    let star = "";
+    for(let j = 0; j <= i; j++){
+        
+        let starposition = 9-i;
+        star += starposition >= j ? '*' : ' '; 
+    }
+    console.log(star); 
+}
