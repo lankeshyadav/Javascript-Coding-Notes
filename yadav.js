@@ -239,19 +239,5 @@ for(let i = 0; i <=fruits.length; i++) {
 // console.log(timesnumber(arr));
 
 
-// function sortArray(arr) {
-//   let sorted = [...arr];
-//   for (let i = 0; i < arr.length; i++) {
-//     for (let j = 0; j < arr.length; j++) {
-//       if (sorted[j] > sorted[j + 1]) {
-//         let temp = sorted[j];
-//         sorted[j] = sorted[j + 1];
-//         sorted[j + 1] = temp;
-//       }
-//     }
-//   }
-//   return sorted;
-// }
-// const arr = [4,5,1,2,3];
-// console.log(sortArray(arr)); 
+
 

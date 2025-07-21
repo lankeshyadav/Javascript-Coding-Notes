@@ -302,18 +302,50 @@
 // console.log(minmaxnumber(arr));
 
 
-function timesnumber(arr){
-  let obj = {};
+// function timesnumber(arr){
+//   let obj = {};
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i]){
+//       if(obj[arr[i]]){
+//         obj[arr[i]]++;
+//       }else {
+//         obj[arr[i]] = 1;
+//       }
+//     }
+//   }
+//   return obj;
+// }
+// let arr = [1,2,1,5,2,1,-1,-2,-1];
+// console.log(timesnumber(arr));
+
+
+
+// function sortArray(arr){
+//   for(let i = 0; i < arr.length; i++){
+//     for(let j = 0; j < arr.length-i; j++){
+//       if(arr[j] > arr[j+1]){
+//         temp = arr[j];
+//         arr[j] = arr[j+1];
+//         arr[j+1] = temp;
+//       }
+//     }
+//   }
+// return arr;
+// }
+// let arr = [32,48,50,30,23,5,46];
+// console.log(sortArray(arr));
+
+
+function twoaddarray(arr,arr1){
+  let res = [];
   for(let i = 0; i < arr.length; i++){
-    if(arr[i]){
-      if(obj[arr[i]]){
-        obj[arr[i]]++;
-      }else {
-        obj[arr[i]] = 1;
-      }
-    }
+    res.push(arr[i]);
   }
-  return obj;
+  for(let j = 0; j < arr1.length; j++){
+    res.push(arr1[j]);
+  }
+  return res;
 }
-let arr = [1,2,1,5,2,1,-1,-2,-1];
-console.log(timesnumber(arr));
+let arr = [1,2,3,4];
+let arr1 = [5,6,7,8,9,10];
+console.log(twoaddarray(arr,arr1));
