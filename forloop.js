@@ -64,7 +64,7 @@ console.log(`${numToCheck} is prime: ${isPrime}`);*/ //output:- 17 is prime: tru
 
 
 //Print Fibonacci series up to a given number
-/*const limit = 10;
+const limit = 10;
 let a = 0, b = 1;
 
 for (let i = 1; i <= limit; i++) {
@@ -72,20 +72,20 @@ for (let i = 1; i <= limit; i++) {
   const next = a + b;
   a = b;
   b = next;
-}*/
+}
 
 
 //Count occurrences of a letter in a string
-const str = "hello world";
-const charToCount = 'o';
-let count = 0;
+// const str = "hello world";
+// const charToCount = 'o';
+// let count = 0;
 
-for (let i = 0; i < str.length; i++) {
-  if (str[i] === charToCount) {
-    count++;
-  }
-}
-console.log(`'${charToCount}' occurs ${count} times.`);  //output:- 'o' occurs 2 times 
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] === charToCount) {
+//     count++;
+//   }
+// }
+// console.log(`'${charToCount}' occurs ${count} times.`);  //output:- 'o' occurs 2 times 
 
 
 

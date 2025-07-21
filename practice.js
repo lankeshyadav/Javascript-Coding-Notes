@@ -181,23 +181,20 @@
 //write a function to remove dublicate from string ex-akshay,
 //output - akshy
 
-function dublicatename(str){
-    let ans = "";
-    let hash = {
-
-    }
-   for(let i = 0; i< str.length; i++){
-    if(hash[str[i]] != true){
-        ans += str[i];
-        hash[str[i]] = true; 
-
-    }
-
-   }  
-   return ans;  
-}
-let str = "akshay";
-console.log(dublicatename(str));
+// function dublicatename(str){
+//     let ans = "";
+//     let hash = {
+//     }
+//    for(let i = 0; i< str.length; i++){
+//     if(hash[str[i]] != true){
+//         ans += str[i];
+//         hash[str[i]] = true; 
+//     }
+//    }  
+//    return ans;  
+// }
+// let str = "akshay";
+// console.log(dublicatename(str));
 
 
 // write a function to find second largest number of array
@@ -233,3 +230,90 @@ console.log(dublicatename(str));
 // }
 // let num = 81;
 // console.log(ispower(num));
+
+
+
+// function objectname(arr){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].balance > 100 || arr[i].balance == 100){
+//             // res = arr[i].balance; 
+//             // console.log(Array.isArray(res));
+//             res.push(arr[i]); 
+//         }
+//     }
+//     return res;
+// }
+// let  arr = [
+//   { balance: 233 },{ balance: 17 },{ balance: 491 },{ balance: 78 },{ balance: 350 },{ balance: 19 },{ balance: 402 },{ balance: 101 },{ balance: 5 },{ balance: 220 },{ balance: 299 },{ balance: 410 },{ balance: 72 },{ balance: 389 },{ balance: 141 },{ balance: 43 },{ balance: 326 },{ balance: 471 },{ balance: 265 },{ balance: 120 }
+// ];
+// console.log(objectname(arr));
+
+// function objectname(arr,value){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].balance != value){
+//             res.push(arr[i]); 
+//         }
+//     }
+//     return res;
+// }
+// let  arr = [
+//   { balance: 233 },{ balance: 17 },{ balance: 491 },{ balance: 78 },{ balance: 350 },{ balance: 19 },{ balance: 402 },{ balance: 101 },{ balance: 5 },{ balance: 220 },{ balance: 299 },{ balance: 410 },{ balance: 72 },{ balance: 389 },{ balance: 141 },{ balance: 43 },{ balance: 326 },{ balance: 471 },{ balance: 265 },{ balance: 120 }
+// ];
+
+// let value = 233;
+// console.log(objectname(arr,value));
+
+
+
+// function objectname(arr){
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         res.push(arr[i].balance);
+        
+//     }
+//     return res;
+// }
+// let  arr = [
+//   { balance: 233 },{ balance: 17 },{ balance: 491 },{ balance: 78 },{ balance: 350 },{ balance: 19 },{ balance: 402 },{ balance: 101 },{ balance: 5 },{ balance: 220 },{ balance: 299 },{ balance: 410 },{ balance: 72 },{ balance: 389 },{ balance: 141 },{ balance: 43 },{ balance: 326 },{ balance: 471 },{ balance: 265 },{ balance: 120 }
+// ];
+
+// let ans = objectname(arr);
+// console.log(ans);
+
+
+
+// function minmaxnumber(arr){
+//   let min = Infinity;
+//   let max = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > max){
+//       max = arr[i];
+//     }if(arr[i] < min){
+//       min = arr[i];
+//     }
+//   }
+//    return {
+//     max, min
+//    };
+// }
+// let arr = [1,2,5,4,7,8,10,0];
+// console.log(minmaxnumber(arr));
+
+
+function timesnumber(arr){
+  let obj = {};
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i]){
+      if(obj[arr[i]]){
+        obj[arr[i]]++;
+      }else {
+        obj[arr[i]] = 1;
+      }
+    }
+  }
+  return obj;
+}
+let arr = [1,2,1,5,2,1,-1,-2,-1];
+console.log(timesnumber(arr));

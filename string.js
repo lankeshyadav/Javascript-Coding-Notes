@@ -30,22 +30,22 @@
 // const str = "    javascript    ";
 // console.log(str.trim());
 
-function getmaxprofit(prices){
-   let maxprofit = 0;
-   let len = prices.length;
-   let mincost = 999;
-   for(let i = 0; i < len; i++){
-      if(prices[i] < mincost){
-         mincost = prices[i];
-      }else if(prices[i] - mincost > maxprofit){
-         maxprofit = prices[i] - mincost;
-      }
-   }
-   return maxprofit;
-}
-let prices = [5, 15 , 2, 7, 29, 13];
-let profit = getmaxprofit(prices);
-console.log(profit);
+// function getmaxprofit(prices){
+//    let maxprofit = 0;
+//    let len = prices.length;
+//    let mincost = 999;
+//    for(let i = 0; i < len; i++){
+//       if(prices[i] < mincost){
+//          mincost = prices[i];
+//       }else if(prices[i] - mincost > maxprofit){
+//          maxprofit = prices[i] - mincost;
+//       }
+//    }
+//    return maxprofit;
+// }
+// let prices = [5, 15 , 2, 7, 29, 13];
+// let profit = getmaxprofit(prices);
+// console.log(profit);
 
 
 

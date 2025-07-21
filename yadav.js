@@ -163,12 +163,95 @@ for(let i = 0; i <=fruits.length; i++) {
 // const str = "   hello world  ";
 // console.log(str.trim());
 
-for(let i = 0; i <= 9; i++){
-    let star = "";
-    for(let j = 0; j <= i; j++){
+// for(let i = 0; i <= 9; i++){
+//     let star = "";
+//     for(let j = 0; j <= i; j++){
         
-        let starposition = 9-i;
-        star += starposition >= j ? '*' : ' '; 
-    }
-    console.log(star); 
-}
+//         let starposition = 9-i;
+//         star += starposition >= j ? '*' : ' '; 
+//     }
+//     console.log(star); 
+// }
+
+
+// var isValidSudoku = function(board) {
+//     let rows = Array.from({ length: 9 }, () => new Set());
+//     let cols = Array.from({ length: 9 }, () => new Set());
+//     let boxes = Array.from({ length: 9 }, () => new Set());
+
+//     for (let i = 0; i < 9; i++) {
+//         for (let j = 0; j < 9; j++) {
+//             if (board[i][j] === '.') {
+//                 continue;
+//             }
+
+//             let value = board[i][j];
+//             let boxIndex = Math.floor(i / 3) * 3 + Math.floor(j / 3);
+
+//             if (rows[i].has(value) || cols[j].has(value) || boxes[boxIndex].has(value)) {
+//                 return false;
+//             }
+
+//             rows[i].add(value);
+//             cols[j].add(value);
+//             boxes[boxIndex].add(value);
+//         }
+//     }
+
+//     return true;  
+// };
+
+
+// function sortArray(arr) {
+//   let sortedArr = [...arr];
+//   for (let i = 0; i <= arr.length; i++) {
+//     for (let j = 0; j <= arr.length; j++) {
+//       if (sortedArr[j] > sortedArr[j + 1]) {
+//         let largestnumber = sortedArr[j];
+//         sortedArr[j] = sortedArr[j + 1];
+//         sortedArr[j + 1] = largestnumber;
+//       }
+//     }
+//   }
+//   return sortedArr;
+// }
+// const numbers = [4,5,1,2,3];
+// const result = sortArray(numbers);
+// console.log(result); 
+
+
+
+// function timesnumber(arr) {
+//   let obj = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     let count = arr[i];
+//     if (count > 0) {
+//       if (obj[count]) {
+//         obj[count]++;
+//       } else {
+//         obj[count] = 1;
+//       }
+//     }
+//   }
+//   return obj;
+// }
+// const arr = [1, 2, 3, 1, 3, 3, 2,1];
+// console.log(timesnumber(arr));
+
+
+// function sortArray(arr) {
+//   let sorted = [...arr];
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//       if (sorted[j] > sorted[j + 1]) {
+//         let temp = sorted[j];
+//         sorted[j] = sorted[j + 1];
+//         sorted[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return sorted;
+// }
+// const arr = [4,5,1,2,3];
+// console.log(sortArray(arr)); 
+

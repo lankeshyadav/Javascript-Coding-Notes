@@ -25,7 +25,7 @@
 //     console.log("lankesh");
 // }
 
-const message = "Hello, World";
+const message = "Lankesh";
 for (let a = 0; a < 100; a++) {
   console.log(message);
 }
