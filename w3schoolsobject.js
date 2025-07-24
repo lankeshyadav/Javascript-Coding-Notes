@@ -269,21 +269,113 @@
 
 
 
-let x = " ";
-const myObj = {
-    name: "John",
-    age:30,
-    cars: [
-        {name:"Ford", models:["Fiesta", "Focus", "Musting"]},
-        {name:"BMW", models:["320", "X3", "X5"]},
-        {name:"Fiat", models:["500", "Panda"]}
-    ]
-}
-for(let i in myObj.cars){
-    x += myObj.cars[i].name;
-    for(let j in myObj.cars[i].models){
-        x += myObj.cars[i].models[j];
-    }
-}
-console.log(x);
+// let x = " ";
+// const myObj = {
+//     name: "John",
+//     age:30,
+//     cars: [
+//         {name:"Ford", models:["Fiesta", "Focus", "Musting"]},
+//         {name:"BMW", models:["320", "X3", "X5"]},
+//         {name:"Fiat", models:["500", "Panda"]}
+//     ]
+// }
+// for(let i in myObj.cars){
+//     x += myObj.cars[i].name;
+//     for(let j in myObj.cars[i].models){
+//         x += myObj.cars[i].models[j];
+//     }
+// }
+// console.log(x);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.join("="));
+
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.pop();
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.push("coconut");
+// console.log(fruits);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.shift();
+// console.log(fruits);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.unshift("Lemon");
+// console.log(fruits);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits[0] = "kiwi";
+// console.log(fruits);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits[fruits.length] = "Kiwi";
+// console.log(fruits);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// delete fruits[1];
+// console.log(fruits);
+
+
+// const myGirls = ["Cecilie", "Lone"];
+// const myBoys = ["Emil", "Tobias", "Linus"];
+// const myChildren = myGirls.concat(myBoys);
+// console.log(myChildren);
+
+
+// const arr = ["Emil", "Tobias", "Linus"];
+// const myChildren = arr.concat(23);
+// console.log(myChildren);
+
+// const fruits = ["Banana", "Orange", "Mango", "Apple"];
+// fruits.copyWithin(2,0);
+// console.log(fruits);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+// fruits.copyWithin(2, 0, 3);
+// console.log(fruits);
+
+// const fruits = ["Banana", "Mango", "Apple", "Papaya"];
+// const citus = fruits.slice(1,3);
+// console.log(citus);
+
+
+
+
+
+// function number(arr){
+//     const res = arr.filter((element) => {
+//         return element > 0;
+//     });
+//     return res;
+// }
+// const arr = [2,2,3,4,-5,-1];
+// console.log(number(arr));
+
+
+
+
+// function namestr(str){
+//     let upperCase = [];
+//     str.forEach((element) => {
+//     // element.toUpperCase();
+//     upperCase.push(element.toUpperCase());
+// });
+// return upperCase;
+// }
+// let str = ["name", "kumar"];
+// console.log(namestr(str));
+
+
+
 
