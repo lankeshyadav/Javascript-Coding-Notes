@@ -347,9 +347,11 @@
 
 // const fruits = ["Banana", "Mango", "Apple", "Papaya"];
 // const citus = fruits.slice(1,3);
-// console.log(citus);
+// console.log(citus); //Mango,Apple
 
-
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2,2, "Lemon", "Kiwi");
+// console.log(fruits); //Banana,Orange,Lemnon,Kiwi
 
 
 
@@ -377,5 +379,101 @@
 // console.log(namestr(str));
 
 
+// let sum = arr.reduce(stringcount, 0);
+// function stringcount(total, value){
+//     return total + value;
+// }
+// const arr = [1,2,3,4];
+// console.log(stringcount(arr));
+
+// function totalnumber(arr){
+//     const result = arr.reduce((total,value) => {
+//           return total + value;
+//     }, 0);
+//     return result;
+// }
+// let arr = [100,11,100,89];
+// console.log(totalnumber(arr));
+
+
+// function strcount(arr){
+//     const result = arr.reduce((total, element) => {
+//        if(total[element]){
+//         total[element]++;
+//        }else{
+//          total[element] = 1 ;
+//        }
+//        return total;
+//     }, {});
+//     return result;
+// }
+// const arr = ["Banana","Apple","Banana","Apple","Orange"];
+// console.log(strcount(arr));
+
+
+// function scored(arr){
+//     const result = arr.filter((element) => {
+//        return element > 80;
+//     });
+//     const res = result.map((element) => {
+//     return `passed: ${element.toString()}`;
+// });
+//     return res;
+// }
+// const arr = [45,82,99,50];
+// console.log(scored(arr));
+
+// const scored = (arr) =>
+//     arr.filter((element) => element >= 80).map((element) => `passed : ${element}`);
+// const arr = [45,82,99,50];
+// console.log(scored(arr));
+
+
+
+
+// function checkeverynumber(arr){
+//     const result = arr.every((el) => {
+//         if(el > 20){
+//             return true;
+//         }
+//     });
+//     return result;
+// }
+// const arr = [21,25,30,40];
+// console.log(checkeverynumber(arr));
+
+
+//function checksomenumber(arr){
+//    const result = arr.some((el) => {
+//         if(el > 10){
+//             return true;
+//         }
+//     });
+//     return result;
+// }
+// const arr = [2,5,4,6,11];
+// console.log(checksomenumber(arr));
+
+
+//  function highsalary(arr){
+//     const result = arr.filter((el) => {
+//           if(el.salary > 50000){
+//             return true;
+//           }    
+//     });
+//     const result2 = result.map((el) => {
+//         return el.name;
+//     });
+//     return result2;
+// }
+// const arr =  [{name: "Raj", salary:4800},{name: "Simran", salary:67000},{name: "Aman", salary:51000},{name: "Raju", salary:90000}
+// ];
+// console.log(highsalary(arr));
+
+const highsalary = (arr) =>
+    arr.filter((el) => el.salary > 50000).map((el) => el.name);
+const arr =  [{name: "Raj", salary:4800},{name: "Simran", salary:67000},{name: "Aman", salary:51000},{name: "Raju", salary:90000}, {name: "Ankit", salary: 75000}
+];
+console.log(highsalary(arr));
 
 
