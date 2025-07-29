@@ -61,34 +61,79 @@
 // console.log(totalscore(arr));
 
 
-// function highstr(str){
-//     const result = str.reduce((total,el) => {
+// function frequecy(arr){
+//     const result = arr.reduce((total,el) => {
 //         if(total[el]){
 //             total[el]++;
 //         }else {
 //             total[el] = 1;
 //         }
 //         return total;
-//     }, []);
-//     return {
-//         result
-//     };
+//     }, {});
+//     console.log(result);
+//     let maxcount = 0;
+//     let mostfrequent = null;
+//     for(const key in result){
+//       if(result[key] > maxcount){
+//         maxcount = result[key];
+//         mostfrequent = key;
+//       }
+//     }
+//     return mostfrequent;
 // }
-// const str = ["a","b","a","c","b","a"];
-// console.log(highstr(str));
+// const arr = ["a","b","a","c","b","a"];
+// console.log(frequecy(arr));
 
 
 
-function studentname(arr){
-      const result = arr.filter((el) =>{
-       return el.marks.every((mark) => mark >= 40);
-      }); 
-      const result2 = result.map((el) =>{
-        return el.name;
-      });
-      return result2;
-}
-const arr = [{name:"raj", marks:[65,70,55]},
-{name:"simran", marks:[80,35,78]},
-{name:"aman", marks:[90,95,85]}];
-console.log(studentname(arr));
+
+
+// function studentstore(arr){
+//   const result = arr.filter((el) => {
+//     const find = el.marks.every((mark) => mark >= 40);
+//       const Average = el.marks.reduce((total,mark) => total + mark)/el.marks.length;
+//     return find && Average >= 60;
+//   })
+//   let final = result.map((el) => {
+//     return el.name;
+//   })
+//   return final;
+// }
+// const arr = [{name:"raj", marks:[65,70,65]},
+// {name:"simran", marks:[80,35,78]},
+// {name:"aman", marks:[90,95,85]}
+// ];
+// console.log(studentstore(arr));
+
+
+
+// function finalprice(arr){
+//       const result = arr.filter((el) => {
+//         return el.isDiscount == true;
+//       });
+//       const final = result.reduce((total,el) => {
+//         return total += el.price * el.quantity;
+//       },0);
+//       return final;
+// }
+// const arr = [{name:"A", price:100, quantity:2, isDiscount:true},
+//   {name:"B", price:200, quantity:1, isDiscount:false},
+//   {name:"C", price:150, quantity:3, isDiscount:true}
+// ];
+// console.log(finalprice(arr));
+
+
+// const finalprice = (arr) =>
+//       arr.filter((el) => el.isDiscount == true).reduce((total,el) => total += el.price * el.quantity,0);
+// const arr = [{name:"A", price:100, quantity:2, isDiscount:true},
+//   {name:"B", price:200, quantity:1, isDiscount:false},
+//   {name:"C", price:150, quantity:3, isDiscount:true}
+// ];
+// console.log(finalprice(arr));
+
+
+
+
+
+
+ 

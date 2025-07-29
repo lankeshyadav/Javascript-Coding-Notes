@@ -241,5 +241,26 @@ for(let i = 0; i <=fruits.length; i++) {
 // console.log(timesnumber(arr));
 
 
-
+function studentsMarks(arr){
+ const result =arr.filter((el)=>{
+  let find =el.marks.every((mark)=>{
+     if(mark>=40) return true;
+     let ans =el.marks.reduce((total,el)=>{
+      return (total+el/el.length >= 60);
+     },0)
+      return ans;
+  })
+  return find;
+ })
+let final = result.map((el)=>{
+  return el.name;
+})
+ return final;
+}
+let arr =[
+  { name: "Raj", marks: [65, 70, 55] },
+  { name: "Simran", marks: [80, 35, 78] },
+  { name: "Aman", marks: [90, 95, 85] }
+]
+console.log(studentsMarks(arr))
 
